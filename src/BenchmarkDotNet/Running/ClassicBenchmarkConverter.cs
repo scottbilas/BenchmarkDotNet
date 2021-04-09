@@ -49,6 +49,7 @@ namespace BenchmarkDotNet.Running
 
         public static BenchmarkRunInfo[] SourceToBenchmarks(string source, IConfig config = null)
         {
+#if false
             string benchmarkContent = source;
             CompilerResults compilerResults;
             using (var cSharpCodeProvider = new CSharpCodeProvider()) {
@@ -103,6 +104,9 @@ namespace BenchmarkDotNet.Running
             }
 
             return resultBenchmarks.ToArray();
+#else
+            return null;
+#endif
         }
 
         private static string GetRawUrl(string url)
