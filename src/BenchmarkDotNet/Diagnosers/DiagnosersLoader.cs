@@ -34,7 +34,7 @@ namespace BenchmarkDotNet.Diagnosers
         private static IEnumerable<IDiagnoser> LoadDiagnosers()
         {
             yield return MemoryDiagnoser.Default;
-            yield return new DisassemblyDiagnoser(new DisassemblyDiagnoserConfig());
+            //yield return new DisassemblyDiagnoser(new DisassemblyDiagnoserConfig());
 
             if (RuntimeInformation.IsNetCore)
                 yield return EventPipeProfiler.Default;

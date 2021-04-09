@@ -14,6 +14,10 @@
     <RootNamespace>BenchmarkDotNet.Disassembler</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="ClrMdDisassembler.cs" />
+    <Compile Remove="DataContracts.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Iced" Version="1.8.0" />
     <PackageReference Include="Microsoft.Diagnostics.Runtime" Version="1.1.126102" />
   </ItemGroup>

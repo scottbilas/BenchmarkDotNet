@@ -1,4 +1,4 @@
-﻿using Iced.Intel;
+﻿//using Iced.Intel;
 using Microsoft.Diagnostics.Runtime;
 using System;
 using System.Collections.Generic;
@@ -24,7 +24,7 @@ namespace BenchmarkDotNet.Disassemblers
 
     public class Asm : SourceCode
     {
-        public Instruction Instruction { get; set; }
+        //public Instruction Instruction { get; set; }
     }
 
     public class MonoCode : SourceCode
